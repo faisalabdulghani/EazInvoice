@@ -1,0 +1,35 @@
+.privacy-policy .contact-banner {
+    background-color: #000000;
+}
+
+.privacy-policy .container {
+    max-width: 1102px;
+    width: 80%;
+    border: .1mm solid #000000;
+    border-radius: 8px;
+}
+
+.privacy-policy .container p,
+.privacy-policy .container span.heading {
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.privacy-policy .container span.heading {
+    color: #000000;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .privacy-policy .container {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .privacy-policy .container p {
+        line-height: 28px;
+    }
+}

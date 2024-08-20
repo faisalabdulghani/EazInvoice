@@ -1,0 +1,35 @@
+.terms-and-condition .contact-banner {
+    background-color: #000000;
+}
+
+.terms-and-condition .container {
+    max-width: 1102px;
+    width: 80%;
+    border: .1mm solid #0d0d0d;
+    border-radius: 8px;
+}
+
+.terms-and-condition .container p,
+.terms-and-condition .container span.heading {
+    font-size: 18px;
+    line-height: 35px;
+    color: #000000;
+    font-weight: 300;
+}
+
+.terms-and-condition .container span.heading {
+    color: #0d0d0e;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .terms-and-condition .container {
+        width: 90%;
+        text-align: justify;
+    }
+
+    .terms-and-condition .container p {
+        line-height: 28px;
+    }
+}
