@@ -10,9 +10,14 @@ const NavBar = () => {
                         Terms and Conditions
                     </Link>
                 </li>
-                <li>
+                <li style={{ marginRight: '1rem' }}>
                     <Link to="/privacypolicy" style={{ color: '#fff', textDecoration: 'none' }}>
                         Privacy Policy
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/form" style={{ color: '#fff', textDecoration: 'none' }}>
+                        Form
                     </Link>
                 </li>
             </ul>

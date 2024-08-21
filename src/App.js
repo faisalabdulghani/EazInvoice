@@ -1,8 +1,9 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import TermsAndCondition from './page/termsconditions/TermsAndCondition';
 import PrivacyPolicy from './page/PrivacyPolicy/PrivacyPolicy';
+import Form from './page/form/Form';
 import './App.css';
 
 const App = () => {
@@ -10,12 +11,10 @@ const App = () => {
     <Router>
       <NavBar />
       <Routes>
-        {/* Set TermsAndCondition as the default home page */}
         <Route path="/" element={<TermsAndCondition />} />
         <Route path="/termsandcondition" element={<TermsAndCondition />} />
         <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-        {/* Redirect any unknown paths to the home page */}
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
     </Router>
   );
